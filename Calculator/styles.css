@@ -1,15 +1,22 @@
-
-
-/* .screen {
-    height: 45px;
-    width: 180px;
-    background-color: lightgrey;
-    border: solid black 1px;
-    border-radius: 6px;
-} */
-.header {
-    
+body {
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
+
+
+.header,
+.footer {
+    font-size: 24px;
+    color: white;
+    background-color: #1f2937;
+    text-align: center;
+    padding: 10px;
+}
+
+
 
 .container {
     display: grid;
@@ -23,6 +30,9 @@
     "four five six minus"
     "one two three plus"
     "zero zero period equal";
+    padding: 20px;
+    align-self: center;
+    
 }
 
 .container > * {
@@ -33,24 +43,6 @@
     text-align: center;
 }
 
-#screen { grid-area: screen; }
-#clear { grid-area: clear; }
-#sign { grid-area: sign; }
-#percent { grid-area: percent; }
-#divide { grid-area: divide; }
-#seven { grid-area: seven; }
-#eight { grid-area: eight; }
-#nine { grid-area: nine; }
-#multiply { grid-area: multiply; }
-#four { grid-area: four; }
-#five { grid-area: five; }
-#six { grid-area: six; }
-#minus { grid-area: minus; }
-#one { grid-area: one; }
-#two { grid-area: two; }
-#three { grid-area: three; }
-#plus { grid-area: plus; }
-#zero { grid-area: zero; }
-#period { grid-area: period; }
-#equal { grid-area: equal; }
-
+#screen {
+    height: 50px;
+}
